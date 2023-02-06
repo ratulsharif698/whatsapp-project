@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1080px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#fcf5eb;
+}
+nav{
+    padding: 10px 50px 40px 50px;
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.button1{
+    background-color: #25d366;
+    color: #1c1e21;
+    padding: 16px 28px;
+    font-size: 16px;
+    border: 1px solid #1c1e21;
+    border-radius: 30px;
+    display: inline-block;
+}
+.button1::after{
+    background-color: #1c1e21;
+}
+
+nav .logo,
+nav .menu,
+nav .button{
+width: 33.33%;
+}
+
+
+nav .logo img{
+    width: 120px;
+} 
+nav .menu ul li{
+    display: inline-block;
+    padding: 10px;
+}
+nav .button ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+nav .menu ul li a{
+    color: #1c1e21;
+    font-size: 18px;
+    line-height: 25px;
+    display: block;
+    position: relative;
+}
+nav .button ul li a::after,
+nav .menu ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: .05s;
+}
+nav .button {
+    text-align: right;
+}
+nav .button ul li a,
+nav .menu ul li:hover a::after{
+    width: 100%;
+}
+nav .button ul li a{  
+    color: #1c1e21;
+    font-size: 18px;
+    line-height: 25px;
+    display: block;
+}
+nav .button ul{
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+nav .button{
+    text-align: right;
+}
+
+
+
+
+/* banner starts here */
+#banner{
+    background-image: url(../img/banner.png);
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% - 100px);
+    margin: auto;
+    border-radius: 30px;
+}
+.banner_cnt{
+    width: 30%;
+}
+.banner_cnt h2{
+    font-size: 70px;
+    color: white;
+}
+.banner_cnt p{
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ffffff;
+    line-height: 25px;
+    text-align: left;
+
+}
+.banner_cnt a span{
+margin: 10px;
+}
+#banner .row{
+    align-items: center;
+    height: 750px;
+}
+.bsnner_floting_image{
+    position: absolute;
+}
+.good{
+    top: 220px;
+left: 750px ;
+}
+.cup{
+    top: 250px;
+    left: 800px;
+}
+.adio{
+    top: 350px;
+    left:750px ;
+}
+.pic{
+    top: 418px;
+    left: 750px;
+}
+.text{
+    top: 750px;
+    left: 750px;
+}
+/* banner ends here */
+/* img section starts here */
+
+.image{
+    width: 100%;
+     height: 180px; 
+    padding: 40px;
+   background-size: cover;
+   background-image: url(../img/image.png);
+    
+}
+
+
+
+/* img section ends here */
+/* text section starts*/
+#text .container .p-text p{
+    font-size: 50px;
+    text-align: center;
+    list-style: 48px;
+    padding: 10px 20px;
+}
+/* text section ends */
+.image_1{
+    width: 100%;
+    height: 180px;
+    padding: 40px;
+   background-image: url(../img/image_1.png);
+    background-size: cover;
+}
+/*  conference section starts here */
+#conference .conference_text{
+    width: 50%;
+
+}
+#conference .conference-img{
+    width: 50%;
+    text-align: right;
+}
+#conference{
+    padding: 60px 0;
+}
+#conference .conference_text .text_2{
+    font-size: 60px;
+    text-align: left;
+}
+#conference .conference_text .text_3{
+    font-size: 18px;
+    text-align: left;
+    line-height: 25px;
+    letter-spacing: -0.01px;
+    padding: 16px 0 0 0;
+}
+#conference .conference_text .A_text{
+    text-decoration: none;
+    padding: 20px 0 0 0;
+    display: inline-block;
+    color: #1c1e21;
+}
+
+/*  conference section endsts here */
+/* img+text section starts here  */
+#img_text{
+    background-color: #111b21;
+    width: 1350px;
+    height: 750px;
+}
+#img_text .container .row .pic{
+  padding-top: 20px;
+    display: inline-block;
+    text-align: center;
+    bottom: 20px;
+    width: 50%;
+}
+#img_text .container .row .p_text{
+
+    width: 50%;
+    text-align: center;
+    padding: 0 80px;
+}
+#img_text .container .row .p_text h1{
+    color: #ffffff;
+    font-size: 60px;
+    text-align: left;
+}
+#img_text .container .row .p_text h2{
+    color: #25d366;
+    font-size: 60px;
+    text-align: left;
+}
+#img_text .container .row .p_text p{
+    color: #ffffff;
+    font-size: 18px;
+    text-align: left;
+    line-height: 25px;
+    padding: 18px 0;
+}
+#img_text .container .row .p_text a{
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    text-decoration: underline;
+    line-height: 16px;
+}
+/* img+text section ends here */
+/* 7 no setion starts here  */
+ #mobile_pic .container .row .text{
+width: 50%;
+ }
+ #mobile_pic .container .row .image_2{
+width: 50%;
+text-align: center;
+position: relative;
+ }
+  .vdo_image{
+    position: absolute;
+ }
+   .vdo_image{
+    top: 80px;
+    left: 60px;
+   }
+   #mobile_pic .container .row .text h2{
+    font-size: 60px;
+    text-align: left;
+    color: #111b21;
+    font-weight: 200;
+   }
+   #mobile_pic .container .row .text p{
+    font-size: 18px;
+    text-align: left;
+    line-height: 25px;
+    padding: 15px 0;
+   }
+   #mobile_pic .container .row .text a{
+  text-decoration: underline;
+  color: #111b21;
+  font-size: 16px;
+   }
+/* 7 no setion ends here  */
+/* smile pic section starts here  */
+#smile_image .container .row .smile{
+ width: 50%;
+ text-align: right;
+ position: relative;
+}
+/* .smile_img{ */
+    position: absolute;
+}
+/* .smile_img{ */
+    left: 40px;
+    bottom: 100px;
+}
+#smile_image .container .row .smile_text{
+    width: 50%;
+    text-align: left;
+}
+#smile_image .container .row .smile_text h2,
+#smile_image .container .row .smile_text h1{
+    font-size: 60px;
+    font-weight: 100;
+    text-align: left;
+}
+#smile_image .container .row .smile_text p{
+    font-size: 12px;
+    text-align: left;
+    line-height: 12px;
+    display: inline-block;
+}
+/* smile pic section ends here  */
